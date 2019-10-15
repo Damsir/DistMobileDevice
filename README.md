@@ -1,12 +1,9 @@
-# DistMobileDevice
-iOS device adaptation framework
+# Intro
+DistMobileDevice 是一个屏幕设备适配库， 它能够以非常灵活的方式适配任何ios设备，包括iphone、ipad、ipod touch 等等
+使用方式非常简单，
 
-Intro
-
-HKMobileDevice 是一个屏幕设备适配库， 它能够以非常灵活的方式适配任何ios设备，包括iphone、ipad、ipod touch 等等 使用方式非常简单，
-
-Usage
-
+# Usage
+```objc
 #define Device_in(...) [DistMobileDevice isOneOfThem: __VA_ARGS__, nil]
 #define Device_is(is) [DistMobileDevice isOneOfThem:is, nil]
 // device type
@@ -44,43 +41,53 @@ Usage
 if (Device_Screen_414x896) {
         ····
 }
-使用以上宏定义可以判断系列型号类型的设备、屏幕系列的设备，也可以通过以下方式判断任何设备
 
+```
+使用以上宏定义可以判断系列型号类型的设备、屏幕系列的设备，也可以通过以下方式判断任何设备
+```objc
 #define Device_in(...) [DistMobileDevice isOneOfThem: __VA_ARGS__, nil]
 #define Device_is(is) [DistMobileDevice isOneOfThem:is,nil]
 
 Device_in(iPhone4,iPhone7);
 
+```
 如果你不想使用宏定义，可以通过
-
+```objc
 + (BOOL)isOneOfThem:(DistMobileDeviceType)firstType,...NS_REQUIRES_NIL_TERMINATION;
 
 [DistMobileDevice isOneOfThem:iphone4,iPhone7, nil];
+```
 DistMobileDevice 提供通用匹配功能，如果你在对iphone和ipad进行同时同时开发，你可以对通用设备进行匹配
-
+```objc
 Device_in(iPhone)/Device_is(iPhone) // 判断是否是iPhone
 Device_in(iPad)/Device_is(iPad) // 判断是否是iPad
 Device_in(iPod)/Device_is(iPod) // 判断是否是iPod touch
+```
+
 对于模拟器调试，由于模拟器架构为 x86_64或者i385，调试目标设备时，需要将模拟器设为目标设备，例如在启动模拟器iphone8p之前，你需要在app启动时调用以下代码：
-
+```objc
 [DistMobileDevice simulatorType:iPhone8p];
-Installation
+```
 
+# Installation
 推荐使用 CocoaPods
-
+```
 pod 'DistMobileDevice'
+```
 也可以拷贝以下文件至工程：
-
+```
 DistMobileDevice.h
 DistMobileDevice.m
-Version
+```
 
+# Version
 1.0.0
 
 ios 8.0
 
 新增 iphone 11 系列
 
-License
+## License
 
-DistMobileDevice is released under the MIT license. See LICENSE for details.
+DistMobileDevice is released under the MIT license. See [LICENSE](https://github.com/Diasir/DistMobileDevice/raw/master/LICENSE) for details.
+
