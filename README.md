@@ -50,6 +50,7 @@ if (Device_Screen_414x896) {
 #define Device_is(is) [DistMobileDevice isOneOfThem:is,nil]
 
 Device_in(iPhone4,iPhone7);
+
 如果你不想使用宏定义，可以通过
 
 + (BOOL)isOneOfThem:(DistMobileDeviceType)firstType,...NS_REQUIRES_NIL_TERMINATION;
