@@ -1,5 +1,5 @@
 # Intro
-DistMobileDevice 是一个屏幕设备适配库， 它能够以非常灵活的方式适配任何ios设备，包括iphone、ipad、ipod touch 等等
+DistMobileDevice 是一个屏幕设备适配库， 它能够以非常灵活的方式适配任何ios设备，包括iphone、ipad、ipod touch 等等，以及设备相关信息：如UDID
 使用方式非常简单，
 
 # Usage
@@ -86,6 +86,7 @@ DistMobileDevice.m
 ios 8.0
 
 新增 iphone 11 系列
+新增获取设备UDID等
 
 ## License
 
