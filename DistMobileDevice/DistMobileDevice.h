@@ -5,8 +5,13 @@
 //  Copyright © 2018年 Dist. All rights reserved.
 //
 //  @2019.10.15 新增iPhone 11系列
+//  @2020.03.27 新增设备UDID等
 
 #import <Foundation/Foundation.h>
+
+/**
+ *  设备相关的信息库
+ */
 
 #define Device_in(...) [DistMobileDevice isOneOfThem: __VA_ARGS__, nil]
 #define Device_is(is) [DistMobileDevice isOneOfThem:is, nil]
@@ -94,25 +99,53 @@ typedef NS_ENUM(NSInteger, DistMobileDeviceNetworkType){
 
 @interface DistMobileDevice : NSObject
 
-/*
+/**
  *  因为模拟器运行所识别的型号为模拟器，可设置模拟器代替型号，以方便模拟器调试。
  *  设置为 simulator 则不做任何代替
  *  不要赋值为 iPhone等通用类型、mobileDeviceUnkown、mobileDeviceTypeEnd
  */
 + (void)simulatorType:(DistMobileDeviceType)type;
-/*
+/**
  *  获取和判断移动设备的型号
  */
 + (DistMobileDeviceType)deviceType;
 + (BOOL)isOneOfThem:(DistMobileDeviceType)firstType,...NS_REQUIRES_NIL_TERMINATION;
 + (NSString *)platform;// 获取当前移动设备型号的字符串
-/*
- * 获取和判断当前移动设备的网络类型
+/**
+ *  获取和判断当前移动设备的网络类型
  */
 + (BOOL)isUsing:(DistMobileDeviceNetworkType)networkType;
 + (DistMobileDeviceNetworkType)networkType;
 
-+ (BOOL)isJailBroken;// 判断设备是否越狱
-+ (NSString *)WiFiSSID;//获取当前使用的 WIFI 的名称
+/** 判断设备是否越狱 */
++ (BOOL)isJailBroken;
+/** 获取当前使用的 WIFI 的名称 */
++ (NSString *)WiFiSSID;
+
+/** 获取设备当前网络IP地址 */
++ (NSString *)deviceIPAddress:(BOOL)preferIPv4;
+
+/** 设备名称（用户自己设置的名字） */
++ (NSString *)deviceUserName;
+
+/** 设备系统版本 (e.g. @"12.1.4") */
++ (NSString *)deviceSystemVersion;
+
+/** 设备型号 (iPad or iPhone)  */
++ (NSString *)deviceModel;
+
+/** 设备当前运行的系统 (e.g. @"iOS") */
++ (NSString *)deviceSystemName;
+
+/**
+ *  设备唯一识别码
+ *  获取一个保存在keyChain中的IDFV(uuid), 如果不存在, 就创建一个, 然后返回
+ *  method             deviceUDID, Requires iOS6.0 and later
+ *  abstract           Obtain UDID(Unique Device Identity). If it already exits in keychain, return the exit one; otherwise generate a new one and store it into the keychain then return.
+ *  discussion         Use 'identifierForVendor + keychain' to make sure UDID consistency even if the App has been removed or reinstalled.
+ *  param              NULL
+ *  param result       return UDID String
+ */
++ (NSString *)deviceUDID;
 
 @end
