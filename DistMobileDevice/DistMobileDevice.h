@@ -6,6 +6,7 @@
 //
 //  @2019.10.15 新增iPhone 11系列
 //  @2020.03.27 新增设备UDID等
+//  @version: 1.0.2
 
 #import <Foundation/Foundation.h>
 
@@ -137,6 +138,9 @@ typedef NS_ENUM(NSInteger, DistMobileDeviceNetworkType){
 /** 设备当前运行的系统 (e.g. @"iOS") */
 + (NSString *)deviceSystemName;
 
+/** 设备名称、型号 (e.g. @"iPhone 6s") */
++ (NSString *)deviceName;
+
 /**
  *  设备唯一识别码
  *  获取一个保存在keyChain中的IDFV(uuid), 如果不存在, 就创建一个, 然后返回
@@ -149,3 +153,4 @@ typedef NS_ENUM(NSInteger, DistMobileDeviceNetworkType){
 + (NSString *)deviceUDID;
 
 @end
+
