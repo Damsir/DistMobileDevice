@@ -6,7 +6,7 @@
 //
 //  @2019.10.15 新增iPhone 11系列
 //  @2020.03.27 新增设备UDID等
-//  @version: 1.0.2
+//  @version: 1.0.3
 
 #import <Foundation/Foundation.h>
 
@@ -28,7 +28,7 @@
 #define iPhone7_serial Device_in(iPhone7,iPhone7p)
 #define iPhone8_serial Device_in(iPhone8,iPhone8p)
 #define iPhoneX_serial Device_in(iPhoneX,iPhoneXR,iPhoneXS,iPhoneXSMax)
-#define iPhone11_serial DDevice_in(iPhone11,iPhone11Pro,iPhone11ProMax)
+#define iPhone11_serial Device_in(iPhone11,iPhone11Pro,iPhone11ProMax)
 #define iPhoneHair_serial (iPhoneX_serial || iPhone11_serial) //带刘海
 #define iPad1_serial Device_in(iPad1,iPad1_3G)
 #define iPad2_serial Device_in(iPad2WiFi,iPad2,iPad2CDMA)
