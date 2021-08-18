@@ -45,7 +45,7 @@
 #define iPadPro_serial Device_in(iPadPro9_7,iPadPro12_9,iPadPro10_5,iPadPro11)
 // size
 #define Device_Screen_320x568 Device_in(iPhone5,iPhone5c,iPhone5s,iPhoneSE)
-#define Device_Screen_375x667 Device_in(iPhone6,iPhone6s,iPhone7,iPhone8,iPhoneSE2)
+#define Device_Screen_375x667 Device_in(iPhone6,iPhone6s,iPhone7,iPhone8,iPhone2SE)
 #define Device_Screen_414x736 Device_in(iPhone6p,iPhone6sp,iPhone7p,iPhone8p)
 #define Device_Screen_375x812 Device_in(iPhoneX,iPhoneXS)
 #define Device_Screen_414x896 Device_in(iPhoneXSMax,iPhoneXR)
@@ -60,7 +60,7 @@ typedef NS_ENUM(NSUInteger, DistMobileDeviceType) {
     iPhone5,iPhone5c,iPhone5s,
     iPhone6,iPhone6s,
     iPhone6p,iPhone6sp,
-    iPhoneSE,iPhoneSE2,
+    iPhoneSE,iPhone2SE,
     iPhone7,iPhone7p,
     iPhone8,iPhone8p,
     iPhoneX,
