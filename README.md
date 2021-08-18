@@ -88,6 +88,14 @@ ios 8.0
 新增 iphone 11 系列
 新增获取设备UDID等
 
+# Version
+1.0.4
+
+ios 8.0
+
+新增 iphone 12 系列
+
+
 ## License
 
 DistMobileDevice is released under the MIT license. See [LICENSE](https://github.com/Diasir/DistMobileDevice/raw/master/LICENSE) for details.

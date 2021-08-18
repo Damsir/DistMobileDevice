@@ -32,7 +32,7 @@ static NSDictionary *deviceMap;
              @"iPhone7,2":@(iPhone6),
              @"iPhone8,1":@(iPhone6s),
              @"iPhone8,2":@(iPhone6sp),
-             @"iPhone8,4":@(iPhoneSE),
+             @"iPhone8,4":@(iPhoneSE),@"iPhone12,8":@(iPhoneSE2),
              @"iPhone9,1":@(iPhone7),@"iPhone9,3":@(iPhone7),
              @"iPhone9,2":@(iPhone7p),@"iPhone9,4":@(iPhone7p),
              @"iPhone10,1":@(iPhone8),@"iPhone10,4":@(iPhone8),
@@ -42,6 +42,7 @@ static NSDictionary *deviceMap;
              @"iPhone11,4":@(iPhoneXSMax),@"iPhone11,6":@(iPhoneXSMax),
              @"iPhone11,8":@(iPhoneXR),
              @"iPhone12,1":@(iPhone11),@"iPhone12,3":@(iPhone11Pro),@"iPhone12,5":@(iPhone11ProMax),
+             @"iPhone13,1":@(iPhone12Mini),@"iPhone13,2":@(iPhone12),@"iPhone13,3":@(iPhone12Pro),@"iPhone13,4":@(iPhone12ProMax),
              // iPod
              @"iPod1,1":@(iPod1G),@"iPod2,1":@(iPod2G),
              @"iPod3,1":@(iPod3G),@"iPod4,1":@(iPod4G),
@@ -394,6 +395,7 @@ static NSString *const kKeychainUDIDItemServiceName = @"com.dist.SHUDID"; /* Rep
              @"iPhone11,4":@"iPhoneXSMax",@"iPhone11,6":@"iPhoneXSMax",
              @"iPhone11,8":@"iPhoneXR",
              @"iPhone12,1":@"iPhone11",@"iPhone12,3":@"iPhone11Pro",@"iPhone12,5":@"iPhone11ProMax",
+             @"iPhone13,1":@"iPhone12Mini",@"iPhone13,2":@"iPhone12",@"iPhone13,3":@"iPhone12Pro",@"iPhone13,4":@"iPhone12ProMax",
              // iPod
              @"iPod1,1":@"iPod1G",@"iPod2,1":@"iPod2G",
              @"iPod3,1":@"iPod3G",@"iPod4,1":@"iPod4G",

@@ -6,7 +6,8 @@
 //
 //  @2019.10.15 新增iPhone 11系列
 //  @2020.03.27 新增设备UDID等
-//  @version: 1.0.3
+//  @2021.08.18 新增iPhone 12系列
+//  @version: 1.0.4
 
 #import <Foundation/Foundation.h>
 
@@ -29,7 +30,8 @@
 #define iPhone8_serial Device_in(iPhone8,iPhone8p)
 #define iPhoneX_serial Device_in(iPhoneX,iPhoneXR,iPhoneXS,iPhoneXSMax)
 #define iPhone11_serial Device_in(iPhone11,iPhone11Pro,iPhone11ProMax)
-#define iPhoneHair_serial (iPhoneX_serial || iPhone11_serial) //带刘海
+#define iPhone12_serial Device_in(iPhone12Mini,iPhone12,iPhone12Pro,iPhone12ProMax)
+#define iPhoneHair_serial (iPhoneX_serial || iPhone11_serial || iPhone12_serial) //带刘海
 #define iPad1_serial Device_in(iPad1,iPad1_3G)
 #define iPad2_serial Device_in(iPad2WiFi,iPad2,iPad2CDMA)
 #define iPad3_serial Device_in(iPad3,ipad3WiFi,ipad3GSM_CDMA)
@@ -64,6 +66,7 @@ typedef NS_ENUM(NSUInteger, DistMobileDeviceType) {
     iPhoneX,
     iPhoneXR,iPhoneXS,iPhoneXSMax,
     iPhone11,iPhone11Pro,iPhone11ProMax,
+    iPhone12Mini,iPhone12,iPhone12Pro,iPhone12ProMax,
     //==>iPod
     iPod_serial,//23
     iPod1G,iPod2G,iPod3G,iPod4G,iPod5Gen,iPod6Gen,
