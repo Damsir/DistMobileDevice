@@ -385,7 +385,7 @@ static NSString *const kKeychainUDIDItemServiceName = @"com.dist.SHUDID"; /* Rep
              @"iPhone7,2":@"iPhone6",
              @"iPhone8,1":@"iPhone6s",
              @"iPhone8,2":@"iPhone6sp",
-             @"iPhone8,4":@"iPhoneSE",
+             @"iPhone8,4":@"iPhoneSE",@"iPhone12,8":@"iPhoneSE2",
              @"iPhone9,1":@"iPhone7",@"iPhone9,3":@"iPhone7",
              @"iPhone9,2":@"iPhone7p",@"iPhone9,4":@"iPhone7p",
              @"iPhone10,1":@"iPhone8",@"iPhone10,4":@"iPhone8",
