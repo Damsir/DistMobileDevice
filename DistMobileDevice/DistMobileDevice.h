@@ -60,7 +60,7 @@ typedef NS_ENUM(NSUInteger, DistMobileDeviceType) {
     iPhone5,iPhone5c,iPhone5s,
     iPhone6,iPhone6s,
     iPhone6p,iPhone6sp,
-    iPhoneSE,
+    iPhoneSE,iPhoneSE2,
     iPhone7,iPhone7p,
     iPhone8,iPhone8p,
     iPhoneX,
