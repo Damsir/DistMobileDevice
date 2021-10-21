@@ -95,6 +95,13 @@ ios 8.0
 
 新增 iphone 12 系列
 
+# Version
+1.0.6
+
+ios 8.0
+
+新增 iphone 13 系列
+
 
 ## License
 
