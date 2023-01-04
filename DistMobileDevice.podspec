@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "DistMobileDevice"
-  s.version      = "1.0.6"
+  s.version      = "1.0.7"
   s.summary      = "iOS device adaptation framework"
   s.author       = { "Damrin" => "75081647@qq.com" }
   s.homepage    = 'https://github.com/Damsir/DistMobileDevice'

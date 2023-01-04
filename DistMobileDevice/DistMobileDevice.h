@@ -8,7 +8,8 @@
 //  @2020.03.27 新增设备UDID等
 //  @2021.08.18 新增iPhone 12系列
 //  @2021.10.21 新增iPhone 13系列
-//  @version: 1.0.6
+//  @2023.01.04 新增iPhone 14系列
+//  @version: 1.0.7
 
 #import <Foundation/Foundation.h>
 
@@ -33,7 +34,8 @@
 #define iPhone11_serial Device_in(iPhone11,iPhone11Pro,iPhone11ProMax)
 #define iPhone12_serial Device_in(iPhone12Mini,iPhone12,iPhone12Pro,iPhone12ProMax)
 #define iPhone13_serial Device_in(iPhone13Mini,iPhone13,iPhone13Pro,iPhone13ProMax)
-#define iPhoneHair_serial (iPhoneX_serial || iPhone11_serial || iPhone12_serial || iPhone13_serial) // 带刘海系列
+#define iPhone14_serial Device_in(iPhone14,iPhone14p,iPhone14Pro,iPhone14ProMax)
+#define iPhoneHair_serial (iPhoneX_serial || iPhone11_serial || iPhone12_serial || iPhone13_serial || iPhone14_serial) // 带刘海系列
 #define iPad1_serial Device_in(iPad1,iPad1_3G)
 #define iPad2_serial Device_in(iPad2WiFi,iPad2,iPad2CDMA)
 #define iPad3_serial Device_in(iPad3,ipad3WiFi,ipad3GSM_CDMA)
@@ -47,14 +49,15 @@
 #define iPadPro_serial Device_in(iPadPro9_7,iPadPro12_9,iPadPro10_5,iPadPro11)
 // size
 #define Device_Screen_320x568 Device_in(iPhone5,iPhone5c,iPhone5s,iPhoneSE)
-#define Device_Screen_375x667 Device_in(iPhone6,iPhone6s,iPhone7,iPhone8,iPhone2SE)
+#define Device_Screen_375x667 Device_in(iPhone6,iPhone6s,iPhone7,iPhone8,iPhone2SE,iPhone3SE)
 #define Device_Screen_414x736 Device_in(iPhone6p,iPhone6sp,iPhone7p,iPhone8p)
 #define Device_Screen_375x812 Device_in(iPhoneX,iPhoneXS,iPhone11Pro)
 #define Device_Screen_414x896 Device_in(iPhoneXSMax,iPhoneXR,iPhone11,iPhone11ProMax)
 #define Device_Screen_360x780 Device_in(iPhone12Mini,iPhone13Mini)
-#define Device_Screen_390x844 Device_in(iPhone12,iPhone12Pro,iPhone13,iPhone13Pro)
-#define Device_Screen_428x926 Device_in(iPhone12ProMax,iPhone13ProMax)
-
+#define Device_Screen_390x844 Device_in(iPhone12,iPhone12Pro,iPhone13,iPhone13Pro,iPhone14)
+#define Device_Screen_428x926 Device_in(iPhone12ProMax,iPhone13ProMax,iPhone14p)
+#define Device_Screen_393x852 Device_in(iPhone14Pro)
+#define Device_Screen_430x932 Device_in(iPhone14ProMax)
 
 // 为了方便使用，将不为枚举添加前缀，请使用前注意没有冲突问题
 typedef NS_ENUM(NSUInteger, DistMobileDeviceType) {
@@ -66,7 +69,7 @@ typedef NS_ENUM(NSUInteger, DistMobileDeviceType) {
     iPhone5,iPhone5c,iPhone5s,
     iPhone6,iPhone6s,
     iPhone6p,iPhone6sp,
-    iPhoneSE,iPhone2SE,
+    iPhoneSE,iPhone2SE,iPhone3SE,
     iPhone7,iPhone7p,
     iPhone8,iPhone8p,
     iPhoneX,
@@ -74,6 +77,7 @@ typedef NS_ENUM(NSUInteger, DistMobileDeviceType) {
     iPhone11,iPhone11Pro,iPhone11ProMax,
     iPhone12Mini,iPhone12,iPhone12Pro,iPhone12ProMax,
     iPhone13Mini,iPhone13,iPhone13Pro,iPhone13ProMax,
+    iPhone14,iPhone14p,iPhone14Pro,iPhone14ProMax,
     //==>iPod
     iPod_serial,//23
     iPod1G,iPod2G,iPod3G,iPod4G,iPod5Gen,iPod6Gen,

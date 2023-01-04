@@ -32,7 +32,7 @@ static NSDictionary *deviceMap;
              @"iPhone7,2":@(iPhone6),
              @"iPhone8,1":@(iPhone6s),
              @"iPhone8,2":@(iPhone6sp),
-             @"iPhone8,4":@(iPhoneSE),@"iPhone12,8":@(iPhone2SE),
+             @"iPhone8,4":@(iPhoneSE),@"iPhone12,8":@(iPhone2SE),@"iPhone14,6":@(iPhone3SE),
              @"iPhone9,1":@(iPhone7),@"iPhone9,3":@(iPhone7),
              @"iPhone9,2":@(iPhone7p),@"iPhone9,4":@(iPhone7p),
              @"iPhone10,1":@(iPhone8),@"iPhone10,4":@(iPhone8),
@@ -44,6 +44,7 @@ static NSDictionary *deviceMap;
              @"iPhone12,1":@(iPhone11),@"iPhone12,3":@(iPhone11Pro),@"iPhone12,5":@(iPhone11ProMax),
              @"iPhone13,1":@(iPhone12Mini),@"iPhone13,2":@(iPhone12),@"iPhone13,3":@(iPhone12Pro),@"iPhone13,4":@(iPhone12ProMax),
              @"iPhone14,4":@(iPhone13Mini),@"iPhone14,5":@(iPhone13),@"iPhone14,2":@(iPhone13Pro),@"iPhone14,3":@(iPhone13ProMax),
+             @"iPhone14,7":@(iPhone14),@"iPhone14,8":@(iPhone14p),@"iPhone15,2":@(iPhone14Pro),@"iPhone15,3":@(iPhone14ProMax),
              // iPod
              @"iPod1,1":@(iPod1G),@"iPod2,1":@(iPod2G),
              @"iPod3,1":@(iPod3G),@"iPod4,1":@(iPod4G),
@@ -386,7 +387,7 @@ static NSString *const kKeychainUDIDItemServiceName = @"com.dist.SHUDID"; /* Rep
              @"iPhone7,2":@"iPhone6",
              @"iPhone8,1":@"iPhone6s",
              @"iPhone8,2":@"iPhone6sp",
-             @"iPhone8,4":@"iPhoneSE",@"iPhone12,8":@"iPhone2SE",
+             @"iPhone8,4":@"iPhoneSE",@"iPhone12,8":@"iPhone2SE",@"iPhone14,6":@"iPhone3SE",
              @"iPhone9,1":@"iPhone7",@"iPhone9,3":@"iPhone7",
              @"iPhone9,2":@"iPhone7p",@"iPhone9,4":@"iPhone7p",
              @"iPhone10,1":@"iPhone8",@"iPhone10,4":@"iPhone8",
@@ -398,6 +399,7 @@ static NSString *const kKeychainUDIDItemServiceName = @"com.dist.SHUDID"; /* Rep
              @"iPhone12,1":@"iPhone11",@"iPhone12,3":@"iPhone11Pro",@"iPhone12,5":@"iPhone11ProMax",
              @"iPhone13,1":@"iPhone12Mini",@"iPhone13,2":@"iPhone12",@"iPhone13,3":@"iPhone12Pro",@"iPhone13,4":@"iPhone12ProMax",
              @"iPhone14,4":@"iPhone13Mini",@"iPhone14,5":@"iPhone13",@"iPhone14,2":@"iPhone13Pro",@"iPhone14,3":@"iPhone13ProMax",
+             @"iPhone14,7":@"iPhone14",@"iPhone14,8":@"iPhone14p",@"iPhone15,2":@"iPhone14Pro",@"iPhone15,3":@"iPhone14ProMax",
              // iPod
              @"iPod1,1":@"iPod1G",@"iPod2,1":@"iPod2G",
              @"iPod3,1":@"iPod3G",@"iPod4,1":@"iPod4G",
