@@ -8,8 +8,12 @@
 //  @2020.03.27 新增设备UDID等
 //  @2021.08.18 新增iPhone 12系列
 //  @2021.10.21 新增iPhone 13系列
+<<<<<<< HEAD
 //  @2023.01.04 新增iPhone 14系列
 //  @version: 1.0.7
+=======
+//  @version: 1.0.6
+>>>>>>> 01c6e7d2383c0513b3620f2ab21507c9ec962772
 
 #import <Foundation/Foundation.h>
 
@@ -34,8 +38,12 @@
 #define iPhone11_serial Device_in(iPhone11,iPhone11Pro,iPhone11ProMax)
 #define iPhone12_serial Device_in(iPhone12Mini,iPhone12,iPhone12Pro,iPhone12ProMax)
 #define iPhone13_serial Device_in(iPhone13Mini,iPhone13,iPhone13Pro,iPhone13ProMax)
+<<<<<<< HEAD
 #define iPhone14_serial Device_in(iPhone14,iPhone14p,iPhone14Pro,iPhone14ProMax)
 #define iPhoneHair_serial (iPhoneX_serial || iPhone11_serial || iPhone12_serial || iPhone13_serial || iPhone14_serial) // 带刘海系列
+=======
+#define iPhoneHair_serial (iPhoneX_serial || iPhone11_serial || iPhone12_serial || iPhone13_serial) // 带刘海系列
+>>>>>>> 01c6e7d2383c0513b3620f2ab21507c9ec962772
 #define iPad1_serial Device_in(iPad1,iPad1_3G)
 #define iPad2_serial Device_in(iPad2WiFi,iPad2,iPad2CDMA)
 #define iPad3_serial Device_in(iPad3,ipad3WiFi,ipad3GSM_CDMA)
@@ -54,10 +62,16 @@
 #define Device_Screen_375x812 Device_in(iPhoneX,iPhoneXS,iPhone11Pro)
 #define Device_Screen_414x896 Device_in(iPhoneXSMax,iPhoneXR,iPhone11,iPhone11ProMax)
 #define Device_Screen_360x780 Device_in(iPhone12Mini,iPhone13Mini)
+<<<<<<< HEAD
 #define Device_Screen_390x844 Device_in(iPhone12,iPhone12Pro,iPhone13,iPhone13Pro,iPhone14)
 #define Device_Screen_428x926 Device_in(iPhone12ProMax,iPhone13ProMax,iPhone14p)
 #define Device_Screen_393x852 Device_in(iPhone14Pro)
 #define Device_Screen_430x932 Device_in(iPhone14ProMax)
+=======
+#define Device_Screen_390x844 Device_in(iPhone12,iPhone12Pro,iPhone13,iPhone13Pro)
+#define Device_Screen_428x926 Device_in(iPhone12ProMax,iPhone13ProMax)
+
+>>>>>>> 01c6e7d2383c0513b3620f2ab21507c9ec962772
 
 // 为了方便使用，将不为枚举添加前缀，请使用前注意没有冲突问题
 typedef NS_ENUM(NSUInteger, DistMobileDeviceType) {
@@ -77,7 +91,10 @@ typedef NS_ENUM(NSUInteger, DistMobileDeviceType) {
     iPhone11,iPhone11Pro,iPhone11ProMax,
     iPhone12Mini,iPhone12,iPhone12Pro,iPhone12ProMax,
     iPhone13Mini,iPhone13,iPhone13Pro,iPhone13ProMax,
+<<<<<<< HEAD
     iPhone14,iPhone14p,iPhone14Pro,iPhone14ProMax,
+=======
+>>>>>>> 01c6e7d2383c0513b3620f2ab21507c9ec962772
     //==>iPod
     iPod_serial,//23
     iPod1G,iPod2G,iPod3G,iPod4G,iPod5Gen,iPod6Gen,
