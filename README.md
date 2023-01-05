@@ -103,7 +103,7 @@ ios 8.0
 新增 iphone 13 系列
 
 # Version
-1.0.7
+1.1.0
 
 ios 8.0
 

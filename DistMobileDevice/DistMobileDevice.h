@@ -8,8 +8,8 @@
 //  @2020.03.27 新增设备UDID等
 //  @2021.08.18 新增iPhone 12系列
 //  @2021.10.21 新增iPhone 13系列
-//  @2023.01.04 新增iPhone 14系列
-//  @version: 1.0.7
+//  @2023.01.05 新增iPhone 14系列
+//  @version: 1.1.0
 
 #import <Foundation/Foundation.h>
 
